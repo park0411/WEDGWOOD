@@ -1,0 +1,325 @@
+html {
+  width: 100%;
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Circular Std","Noto Sans KR";
+  letter-spacing: -0.05em;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #009BDE;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #E7E7E7;
+}
+
+ul,
+ol,
+dl {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000
+}
+
+
+p {
+  font-size: 2.1rem;
+  /* margin-top: 4rem; */
+
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+/* title 정리 */
+.con_tit1.main_tit {
+  font-size: 7.3rem;
+  line-height: 8.5rem;
+  font-family: 'Minion Pro Medium';
+  text-shadow: 2px 2px 2px rgb(182, 182, 182);
+}
+
+.con_tit1.largeTit {
+  font-size: 7.3rem;
+  line-height: 8.5rem;
+  font-family: 'Minion Pro Bold Condensed';
+  text-shadow: 2px 2px 2px gray;
+}
+
+.con_tit1 {
+  font-size: 6rem;
+  line-height: 6.6rem;
+  margin: 3rem auto 2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.con_tit2 {
+  font-size: 5rem;
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+.blueTit {
+  color: #275E87
+}
+
+.whiteTit {
+  color: #fff
+}
+
+
+
+.con_txt1 {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #009BDE;
+  font-family: 'Source Serif Pro', serif;
+}
+
+
+.con_txt2 {
+  font-size: 1.6rem;
+  color: #202020;
+  line-height: 2.6rem;
+}
+
+
+.con_txt3 {
+  font-size: 1.9rem;
+  color: #009BDE;
+  letter-spacing: 0;
+}
+
+.con_txt4 {
+  font-size: 2rem;
+  color: #231F20;
+  font-weight: 500;
+}
+
+.con_txt5 {
+  font-size: 1.5rem;
+  color: #6F6F6F;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+}
+
+.foot_txt1 {
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 2.5rem;
+}
+.foot_txt2 {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+.foot_txt3 {
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 0;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.sFont{
+  font-family: 'Minion Pro Semibold', serif;
+}
+
+.con_btn {
+  display: inline-block;
+  margin: 3rem 0 0;
+  padding: 1.8rem 6rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0;
+  z-index: 10;
+  border: 1px solid transparent;
+  transition: all 0.8s;
+}
+
+.con_btn .img {
+  display: block;
+}
+
+.con_btn:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 6rem;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(119,171,210,1) 0%, rgba(110,141,164,1) 100%);
+}
+
+.con_btn:hover {
+  border: 1px solid #77ABD2;
+  color: #3b6789(5,61,44,1)
+}
+.con_btn:hover:after {
+  background: #fff;
+}
+
+
+
+.con_btn.blue {
+  border: 1px solid transparent;
+}
+
+.con_btn.blue:after {
+  background: linear-gradient(90deg, rgba(19,33,111,1) 0%, rgba(19,33,111,1) 45%, rgba(32,48,165,1) 100%);
+}
+.con_btn.blue:hover {
+  border: 1px solid #1a0e63;
+  color: #1a0e63
+}
+.con_btn.blue:hover:after {
+  background: #fff;
+}
+
+.con_btn.nb {
+  border: 1px solid transparent;
+}
+
+.con_btn.nb:after {
+  background: linear-gradient(180deg, rgba(39,94,135,1) 0%, rgba(22,55,79,1) 100%);
+}
+
+.con_btn.nb:hover {
+  border: 1px solid #16374F;
+  color: #16374F ;
+}
+.con_btn.nb:hover:after {
+  background: #fff
+}
+
+.con_btn.bg {
+  border: 1px solid transparent;
+}
+
+.con_btn.bg:after {
+  background: linear-gradient(90deg, rgba(98,82,69,1) 0%, rgba(128,109,78,1) 100%);
+}
+
+.con_btn.bg:hover {
+  border: 1px solid #625245;
+  color: #625245 ;
+}
+.con_btn.bg:hover:after {
+  background: #fff
+}
+
+
+
+
+
+section{
+  position: relative;
+  z-index: 0;
+}
+
+.inner {
+  max-width: 128rem;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+
+
+.date {
+  font-size: 1.5rem;
+  color: #231F20;
+  font-family: 'Source Serif Pro', serif;
+  margin-top: 3rem;
+  letter-spacing: 0;
+}
+
+.img_wrap {
+  border-radius: 4rem;
+  width: 62.9rem;
+  height: 62.9rem;
+}
+
+
+
+
+
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(1.2rem);
+  }
+
+}
+
